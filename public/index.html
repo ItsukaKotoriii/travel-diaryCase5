@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дневник путешествий</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>🌍 Дневник путешествий</h1>
+            <div id="authButtons">
+                <button id="loginBtn">Вход</button>
+                <button id="registerBtn">Регистрация</button>
+                <button id="logoutBtn" style="display:none;">Выйти</button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Формы входа/регистрации -->
+            <section id="authForms">
+                <div id="loginForm" style="display:none;">
+                    <h2>Вход</h2>
+                    <input type="text" id="loginUsername" placeholder="Логин">
+                    <input type="password" id="loginPassword" placeholder="Пароль">
+                    <button id="loginSubmit">Войти</button>
+                </div>
+                <div id="registerForm" style="display:none;">
+                    <h2>Регистрация</h2>
+                    <input type="text" id="regUsername" placeholder="Логин">
+                    <input type="password" id="regPassword" placeholder="Пароль">
+                    <button id="regSubmit">Зарегистрироваться</button>
+                </div>
+            </section>
+
+            <!-- Основной контент (после входа) -->
+            <div id="mainContent" style="display:none;">
+                <div class="tabs">
+                    <button class="tab active" data-tab="feed">Все путешествия</button>
+                    <button class="tab" data-tab="my">Мои записи</button>
+                    <button class="tab" data-tab="new">Новая запись</button>
+                </div>
+                <div id="tabContent"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Модалка просмотра деталей -->
+    <div id="detailModal" style="display:none;" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="detailTitle"></h3>
+            <img id="detailImage" src="" alt="" style="max-width:100%;">
+            <p><strong>Местоположение:</strong> <span id="detailLocation"></span></p>
+            <p><strong>Стоимость:</strong> <span id="detailCost"></span> ₽</p>
+            <p><strong>Описание:</strong> <span id="detailDescription"></span></p>
+            <p><strong>Автор:</strong> <span id="detailAuthor"></span></p>
+            <p><strong>Дата:</strong> <span id="detailDate"></span></p>
+            <button id="deleteTravelBtn" style="display:none;">Удалить</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

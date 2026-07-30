@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1785396554111,
+    "userId": 1785396521527,
+    "location": "Старая Русса, Россия",
+    "cost": 30,
+    "description": "Круто",
+    "image": "/uploads/1785396554108-ÐÐ´Ð¼Ð¸Ð½Ð¸ÑÑÑÐ°ÑÐ¸Ñ88.png",
+    "isPublic": true,
+    "createdAt": "2026-07-30T07:29:14.111Z"
+  },
+  {
+    "id": 1785396696356,
+    "userId": 1785396578278,
+    "location": "Санкт-Петербург",
+    "cost": 50000,
+    "description": "Красиво",
+    "image": "/uploads/1785396696348-original-1avr.jpg",
+    "isPublic": true,
+    "createdAt": "2026-07-30T07:31:36.356Z"
+  }
+]
